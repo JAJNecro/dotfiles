@@ -110,6 +110,12 @@ return require('lazy').setup({
             lang = "cpp",
         },
     },
+    {
+        'stevearc/oil.nvim',
+        opts = {},
+        -- Optional dependencies
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+    },
   opts = {
         -- configuration goes here
     },
