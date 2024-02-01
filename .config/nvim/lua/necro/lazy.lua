@@ -43,6 +43,7 @@ return require('lazy').setup({
             --- Uncomment these if you want to manage LSP servers from neovim
             {'williamboman/mason.nvim'},
             {'williamboman/mason-lspconfig.nvim'},
+            {'jay-babu/mason-nvim-dap.nvim'},
 
             -- LSP Support
             {'neovim/nvim-lspconfig'},
@@ -115,6 +116,16 @@ return require('lazy').setup({
         opts = {},
         -- Optional dependencies
         dependencies = { "nvim-tree/nvim-web-devicons" },
+    },
+    'mlr-msft/vim-loves-dafny',
+    {
+        "folke/trouble.nvim",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+        opts = {
+            -- your configuration comes here
+            -- or leave it empty to use the default settings
+            -- refer to the configuration section below
+        },
     },
   opts = {
         -- configuration goes here

@@ -124,6 +124,7 @@ export PATH="~/.local/bin:$PATH"
 export PATH="/home/jjavillo/.cargo/bin:/home/jjavillo/.opam/4.13.0/bin:/home/jjavillo/.local/bin:~/.local/bin:/home/jjavillo/.local/bin:~/.local/bin:/home/jjavillo/.cargo/bin:/home/jjavillo/.nvm/versions/node/v19.1.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Razer Chroma SDK/bin:/mnt/c/Program Files/Razer Chroma SDK/bin:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/MATLAB/R2021a/bin:/mnt/c/Windows/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/julia/AppData/Local/Microsoft/WindowsApps:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/PharosSystems/Core:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Neovim/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Users/julia/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/mingw/bin:/snap/bin"
 PATH="$PATH":"$HOME/.local/scripts/"
 PATH="$PATH":"$HOME/.config/emacs/bin"
+PATH="$PATH":"$HOME/dafny"
 bind -s '"\C-f":"tmux-sessionizer\n"'
 # fzf ctrl-r and alt-c behavior
 export FZF_DEFAULT_COMMAND="fd --hidden"
@@ -133,3 +134,8 @@ export VISUAL=nvim
 export EDITOR="$VISUAL"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+alias emacs="emacsclient -c -a 'emacs'"
+export QT_SCALE_FACTOR=2
+export GDK_SCALE=2
+
+[ -f "/home/jjavillo/.ghcup/env" ] && source "/home/jjavillo/.ghcup/env" # ghcup-env

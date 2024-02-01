@@ -1,4 +1,5 @@
 local lsp_zero = require('lsp-zero')
+require'lspconfig'.dafny.setup{}
 
 lsp_zero.on_attach(function(client, bufnr)
   local opts = {buffer = bufnr, remap = false}
@@ -16,6 +17,7 @@ lsp_zero.on_attach(function(client, bufnr)
 end)
 
 require('mason').setup({})
+require("mason-nvim-dap").setup()
 require('mason-lspconfig').setup({
   ensure_installed = {},
   handlers = {

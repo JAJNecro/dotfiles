@@ -3,7 +3,7 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$(find ~/projects ~/classes ~/gems /mnt/c/Users/julia/'OneDrive - University of Maryland'/sem5 -mindepth 1 -maxdepth 1 -type d | fzf)
+    selected=$(find ~/projects ~/classes ~/gems ~/neorg ~/.dotfiles/.config/ -mindepth 1 -maxdepth 1 -type d | fzf)
 fi
 
 if [[ -z $selected ]]; then

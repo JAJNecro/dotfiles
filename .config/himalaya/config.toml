@@ -1,0 +1,38 @@
+[UMD]
+backend = "imap"
+email = "jjavillo@terpmail.umd.edu"
+display-name = "jjavillo"
+imap-host = "imap.terpmail.umd.edu"
+imap-port = 993
+imap-ssl = true
+imap-login = "jjavillo@terpmail.umd.edu"
+imap-auth = "passwd"
+sender = "smtp"
+smtp-host = "smtp.terpmail.umd.edu"
+smtp-port = 465
+smtp-ssl = true
+smtp-login = "jjavillo@terpmail.umd.edu"
+smtp-auth = "passwd"
+
+[UMD.pgp]
+backend = "none"
+
+["Personal Gmail"]
+backend = "imap"
+email = "julianjavi110@gmail.com"
+default = true
+display-name = "julianjavi110"
+imap-host = "imap.gmail.com"
+imap-port = 993
+imap-ssl = true
+imap-login = "julianjavi110@gmail.com"
+imap-auth = "passwd"
+sender = "smtp"
+smtp-host = "smtp.gmail.com"
+smtp-port = 465
+smtp-ssl = true
+smtp-login = "julianjavi110@gmail.com"
+smtp-auth = "passwd"
+
+["Personal Gmail".pgp]
+backend = "none"
