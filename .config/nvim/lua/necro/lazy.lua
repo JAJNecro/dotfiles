@@ -33,7 +33,11 @@ return require('lazy').setup({
     },
     {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
     'nvim-treesitter/playground', 
-    'ThePrimeagen/harpoon', 
+    {
+        "ThePrimeagen/harpoon",
+        branch = "harpoon2",
+        dependencies = { "nvim-lua/plenary.nvim", "nvim-telescope/telescope.nvim"  }
+    },
     'mbbill/undotree', 
     'tpope/vim-fugitive', 
     {
@@ -53,6 +57,24 @@ return require('lazy').setup({
             {'L3MON4D3/LuaSnip'},
         }
     },
+    {
+        'hrsh7th/nvim-cmp',
+        config = function ()
+            require'cmp'.setup {
+                snippet = {
+                    expand = function(args)
+                        require'luasnip'.lsp_expand(args.body)
+                    end
+                },
+
+                sources = {
+                    { name = 'luasnip' },
+                    -- more sources
+                },
+            }
+        end
+    },
+    'saadparwaiz1/cmp_luasnip',
     'petRUShka/vim-sage',
     {
     "kawre/leetcode.nvim",
@@ -69,6 +91,7 @@ return require('lazy').setup({
     },
     {
         "nvim-neorg/neorg",
+        ft = {'norg'},
         build = ":Neorg sync-parsers",
         dependencies = {{ "nvim-lua/plenary.nvim" }, { "nvim-neorg/neorg-telescope" } },
         config = function()
@@ -117,7 +140,10 @@ return require('lazy').setup({
         -- Optional dependencies
         dependencies = { "nvim-tree/nvim-web-devicons" },
     },
-    'mlr-msft/vim-loves-dafny',
+    {
+        'mlr-msft/vim-loves-dafny',
+        ft = {'dafny', 'dfy'}
+    },
     {
         "folke/trouble.nvim",
         dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -127,9 +153,39 @@ return require('lazy').setup({
             -- refer to the configuration section below
         },
     },
-  opts = {
+    'jbyuki/nabla.nvim',
+    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+    opts = {
         -- configuration goes here
     },
+    {
+        'lervag/vimtex',
+        ft = 'tex',
+        config = function()
+            vim.g.vimtex_view_method = 'zathura'
+            vim.g.vimtex_compiler_engine = 'lualatex'
+            vim.g.maplocalleader = ','
+            vim.g.vimtex_quickfix_node = 0
+            vim.g.tex_conceal = 'abdmg'
+        end,
+    },
+    {
+        "iurimateus/luasnip-latex-snippets.nvim",
+        -- vimtex isn't required if using treesitter
+        branch = "fix/lazy-loading",
+        dependencies = { "L3MON4D3/LuaSnip", "lervag/vimtex" },
+        ft = {"tex", "markdown" },
+        config = function()
+            require'luasnip-latex-snippets'.setup({ use_treesitter = true })
+            -- or setup({ use_treesitter = true })
+            require("luasnip").config.setup { enable_autosnippets = true }
+        end,
+  },
+  {
+      'mrcjkb/haskell-tools.nvim',
+      version = '^3', -- Recommended
+      ft = { 'haskell', 'lhaskell', 'cabal', 'cabalproject' },
+  },
 }
 })
 

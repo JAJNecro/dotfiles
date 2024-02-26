@@ -138,4 +138,6 @@ alias emacs="emacsclient -c -a 'emacs'"
 export QT_SCALE_FACTOR=2
 export GDK_SCALE=2
 
+#[ -f "/home/jjavillo/.ghcup/env" ] && source "/home/jjavillo/.ghcup/env" # ghcup-env
+
 [ -f "/home/jjavillo/.ghcup/env" ] && source "/home/jjavillo/.ghcup/env" # ghcup-env

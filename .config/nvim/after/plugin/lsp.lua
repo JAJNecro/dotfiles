@@ -1,5 +1,12 @@
 local lsp_zero = require('lsp-zero')
-require'lspconfig'.dafny.setup{}
+
+vim.diagnostic.config({
+  virtual_text = false,
+  signs = true,
+  underline = true,
+  update_in_insert = true,
+  severity_sort = false,
+})
 
 lsp_zero.on_attach(function(client, bufnr)
   local opts = {buffer = bufnr, remap = false}
@@ -46,3 +53,4 @@ cmp.setup({
     ['<C-Space>'] = cmp.mapping.complete(),
   }),
 })
+require'lspconfig'.dafny.setup{}  --dafny lsp
