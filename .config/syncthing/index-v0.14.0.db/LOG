@@ -275,3 +275,51 @@
 18:31:39.952417 version@stat F·[0 1] S·222KiB[0B 222KiB] Sc·[0.00 0.00]
 18:31:39.957838 table@compaction committed F-1 S-11KiB Ke·0 D·303 T·12.281276ms
 18:31:39.958246 table@remove removed @61
+=============== Feb 26, 2024 (EST) ===============
+01:56:27.333407 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+01:56:27.333622 version@stat F·[0 1] S·222KiB[0B 222KiB] Sc·[0.00 0.00]
+01:56:27.333655 db@open opening
+01:56:27.333696 journal@recovery F·1
+01:56:27.334157 journal@recovery recovering @63
+01:56:27.339420 memdb@flush created L0@66 N·1140 S·66KiB "\x00\x00\x00..org,v19125":"\x0e\x00\x00..oot,v18754"
+01:56:27.339634 version@stat F·[1 1] S·289KiB[66KiB 222KiB] Sc·[0.25 0.00]
+01:56:27.351224 db@janitor F·5 G·1
+01:56:27.351258 db@janitor removing table-62
+01:56:27.351389 db@open done T·17.729362ms
+01:56:28.727965 table@compaction L0·1 -> L1·1 S·289KiB Q·19774
+01:56:28.735151 table@build created L1@69 N·4128 S·273KiB "\x00\x00\x00..git,v70":"\x0e\x00\x00..e32,v2095"
+01:56:28.735207 version@stat F·[0 1] S·273KiB[0B 273KiB] Sc·[0.00 0.00]
+01:56:28.740675 table@compaction committed F-1 S-15KiB Ke·0 D·525 T·12.670854ms
+01:56:28.755537 table@remove removed @65
+=============== Feb 26, 2024 (EST) ===============
+18:03:15.878797 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+18:03:15.880895 version@stat F·[0 1] S·273KiB[0B 273KiB] Sc·[0.00 0.00]
+18:03:15.880961 db@open opening
+18:03:15.881040 journal@recovery F·1
+18:03:15.884254 journal@recovery recovering @67
+18:03:15.892754 memdb@flush created L0@70 N·513 S·22KiB "\x00\x00\x00..org,v19809":"\x0e\x00\x00..org,v20002"
+18:03:15.893233 version@stat F·[1 1] S·296KiB[22KiB 273KiB] Sc·[0.25 0.00]
+18:03:15.912333 db@janitor F·5 G·1
+18:03:15.912377 db@janitor removing table-66
+18:03:15.912514 db@open done T·31.542422ms
+18:03:17.346862 table@compaction L0·1 -> L1·1 S·296KiB Q·20288
+18:03:17.370898 table@build created L1@73 N·4152 S·273KiB "\x00\x00\x00..git,v70":"\x0e\x00\x00..e32,v2095"
+18:03:17.371026 version@stat F·[0 1] S·273KiB[0B 273KiB] Sc·[0.00 0.00]
+18:03:17.375310 table@compaction committed F-1 S-23KiB Ke·0 D·489 T·28.346762ms
+18:03:17.375917 table@remove removed @69
+=============== Feb 28, 2024 (EST) ===============
+23:50:10.172059 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+23:50:10.173906 version@stat F·[0 1] S·273KiB[0B 273KiB] Sc·[0.00 0.00]
+23:50:10.173934 db@open opening
+23:50:10.173988 journal@recovery F·1
+23:50:10.177006 journal@recovery recovering @71
+23:50:10.181813 memdb@flush created L0@74 N·468 S·17KiB "\x00\x00\x00..org,v20557":"\x0e\x00\x00..org,v20527"
+23:50:10.182899 version@stat F·[1 1] S·290KiB[17KiB 273KiB] Sc·[0.25 0.00]
+23:50:10.194886 db@janitor F·5 G·1
+23:50:10.194895 db@janitor removing table-70
+23:50:10.195033 db@open done T·21.094134ms
+23:50:11.582990 table@compaction L0·1 -> L1·1 S·290KiB Q·20757
+23:50:11.591565 table@build created L1@77 N·4156 S·273KiB "\x00\x00\x00..git,v70":"\x0e\x00\x00..e32,v2095"
+23:50:11.591643 version@stat F·[0 1] S·273KiB[0B 273KiB] Sc·[0.00 0.00]
+23:50:11.598578 table@compaction committed F-1 S-17KiB Ke·0 D·464 T·15.52037ms
+23:50:11.598966 table@remove removed @73

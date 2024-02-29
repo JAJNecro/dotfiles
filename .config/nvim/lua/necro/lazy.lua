@@ -17,20 +17,6 @@ return require('lazy').setup({
         -- or                            , branch = '0.1.x',
         dependencies = { {'nvim-lua/plenary.nvim'}, }
     },
-    { 
-        'rebelot/kanagawa.nvim',
-        as = 'kanagawa',
-        config = function()
-            vim.cmd('colorscheme kanagawa')
-        end
-    },
-    { 
-        'rose-pine/neovim',
-        as = 'rose-pine',
-        config = function()
-            vim.cmd('colorscheme rose-pine')
-        end
-    },
     {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
     'nvim-treesitter/playground', 
     {
@@ -38,8 +24,8 @@ return require('lazy').setup({
         branch = "harpoon2",
         dependencies = { "nvim-lua/plenary.nvim", "nvim-telescope/telescope.nvim"  }
     },
-    'mbbill/undotree', 
-    'tpope/vim-fugitive', 
+    'mbbill/undotree',
+    'tpope/vim-fugitive',
     {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v3.x',
@@ -98,7 +84,15 @@ return require('lazy').setup({
             require("neorg").setup {
                 load = {
                     ["core.defaults"] = {}, -- Loads default behaviour
-                    ["core.concealer"] = {}, -- Adds pretty icons to your documents
+                    ["core.concealer"] = {
+                        config = {
+                            icons = {
+                                code_block = {
+                                    conceal = true,
+                                }
+                            }
+                        }
+                    }, -- Adds pretty icons to your documents
                     ["core.dirman"] = { -- Manages Neorg workspaces
                         config = {
                             workspaces = {
@@ -154,9 +148,11 @@ return require('lazy').setup({
         },
     },
     'jbyuki/nabla.nvim',
-    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-    opts = {
-        -- configuration goes here
+    {
+        "folke/tokyonight.nvim",
+        lazy = false,
+        priority = 1000,
+        opts = {},
     },
     {
         'lervag/vimtex',
@@ -172,7 +168,6 @@ return require('lazy').setup({
     {
         "iurimateus/luasnip-latex-snippets.nvim",
         -- vimtex isn't required if using treesitter
-        branch = "fix/lazy-loading",
         dependencies = { "L3MON4D3/LuaSnip", "lervag/vimtex" },
         ft = {"tex", "markdown" },
         config = function()
