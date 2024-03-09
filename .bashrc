@@ -142,17 +142,3 @@ export GDK_SCALE=2
 
 [ -f "/home/jjavillo/.ghcup/env" ] && source "/home/jjavillo/.ghcup/env" # ghcup-env
 
-# >>> juliaup initialize >>>
-
-# !! Contents within this block are managed by juliaup !!
-
-case ":$PATH:" in
-    *:/home/jjavillo/.juliaup/bin:*)
-        ;;
-
-    *)
-        export PATH=/home/jjavillo/.juliaup/bin${PATH:+:${PATH}}
-        ;;
-esac
-
-# <<< juliaup initialize <<<
