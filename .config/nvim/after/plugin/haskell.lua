@@ -1,1 +1,0 @@
--- /.config/nvim/after/ftplugin/haskell.lua

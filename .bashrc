@@ -135,8 +135,12 @@ export EDITOR="$VISUAL"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 alias emacs="emacsclient -c -a 'emacs'"
+alias v="nvim"
 export QT_SCALE_FACTOR=2
 export GDK_SCALE=2
+if [ -f ~/.bash_sysinit ]; then
+    . ~/.bash_sysinit
+fi
 
 #[ -f "/home/jjavillo/.ghcup/env" ] && source "/home/jjavillo/.ghcup/env" # ghcup-env
 

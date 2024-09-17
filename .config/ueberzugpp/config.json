@@ -1,0 +1,8 @@
+{
+  "layer": {
+    "silent": false,
+    "use-escape-codes": true,
+    "no-stdin": false,
+    "output": "x11"
+  }
+}

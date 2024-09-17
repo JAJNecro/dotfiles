@@ -4,12 +4,22 @@ vim.keymap.set("n", "<leader>fv", "<CMD>Oil<CR>")
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("i", "jk", "<Esc>")
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
 
 vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
+
+-- Neorg
+--vim.keymap.set("n", "<leader>ni", "<CMD>Neorg index<CR>")
+vim.keymap.set("n", "<leader>ni", "<CMD>e ~/notes/school_notes/obsidian/Dashboard.md<CR>")
+vim.keymap.set("n", "<leader>nn", "<CMD>ObsidianNew<CR>")
+--vim.keymap.set("n", "<leader>nx", "<CMD>sp ~/neorg/notes/inbox.norg<CR>")
+
+
 
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
@@ -41,3 +51,6 @@ vim.api.nvim_set_keymap("n", "<leader>dr", ":lua require('dapui').open({reset ==
 
 -- Clear all registers
 vim.cmd[[command! WipeReg for i in range(34,122) | silent! call setreg(nr2char(i), []) | endfor]]
+
+-- Zenmode + SoftPencil
+vim.keymap.set("n", "<leader>zz", ":ZenMode | SoftPencil<CR>")

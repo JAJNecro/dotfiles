@@ -1,47 +1,12 @@
 <configuration version="37">
-    <folder id="default" label="Default Folder" path="/home/jjavillo/Sync" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
+    <folder id="nvj3w-27cks" label="Obsidian" path="/mnt/c/Users/julia/Documents/CollegeNotes" type="sendreceive" rescanIntervalS="60" fsWatcherEnabled="false" fsWatcherDelayS="10" fsWatcherTimeoutS="0" ignorePerms="false" autoNormalize="true">
         <filesystemType>basic</filesystemType>
-        <device id="23W7FP7-UA6WRCX-4PDF3PT-WZCRNFT-XDWQXB3-G2R4EKB-T35OWMX-DS7IFQ7" introducedBy="">
+        <device id="ACWL5NA-II2UJNZ-QMS4GQ2-HFVTJ5M-BF7SPLM-6WWZCBC-GA3H6U6-SJ3YHAB" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
-        <minDiskFree unit="%">1</minDiskFree>
-        <versioning>
-            <cleanupIntervalS>3600</cleanupIntervalS>
-            <fsPath></fsPath>
-            <fsType>basic</fsType>
-        </versioning>
-        <copiers>0</copiers>
-        <pullerMaxPendingKiB>0</pullerMaxPendingKiB>
-        <hashers>0</hashers>
-        <order>random</order>
-        <ignoreDelete>false</ignoreDelete>
-        <scanProgressIntervalS>0</scanProgressIntervalS>
-        <pullerPauseS>0</pullerPauseS>
-        <maxConflicts>-1</maxConflicts>
-        <disableSparseFiles>false</disableSparseFiles>
-        <disableTempIndexes>false</disableTempIndexes>
-        <paused>false</paused>
-        <weakHashThresholdPct>25</weakHashThresholdPct>
-        <markerName>.stfolder</markerName>
-        <copyOwnershipFromParent>false</copyOwnershipFromParent>
-        <modTimeWindowS>0</modTimeWindowS>
-        <maxConcurrentWrites>2</maxConcurrentWrites>
-        <disableFsync>false</disableFsync>
-        <blockPullOrder>standard</blockPullOrder>
-        <copyRangeMethod>standard</copyRangeMethod>
-        <caseSensitiveFS>false</caseSensitiveFS>
-        <junctionsAsDirs>true</junctionsAsDirs>
-        <syncOwnership>false</syncOwnership>
-        <sendOwnership>false</sendOwnership>
-        <syncXattrs>false</syncXattrs>
-        <sendXattrs>false</sendXattrs>
-        <xattrFilter>
-            <maxSingleEntrySize>0</maxSingleEntrySize>
-            <maxTotalSize>0</maxTotalSize>
-        </xattrFilter>
-    </folder>
-    <folder id="lnbqw-z4lzg" label="Obsidian" path="/mnt/c/Users/julia/Documents/test" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
-        <filesystemType>basic</filesystemType>
+        <device id="2GDZGAA-WNZOOVS-RPDCHDV-VWTGPVH-5QWHSLP-CQ662AD-KVUIAQO-Q4JGPAF" introducedBy="">
+            <encryptionPassword></encryptionPassword>
+        </device>
         <device id="23W7FP7-UA6WRCX-4PDF3PT-WZCRNFT-XDWQXB3-G2R4EKB-T35OWMX-DS7IFQ7" introducedBy="">
             <encryptionPassword></encryptionPassword>
         </device>
@@ -81,58 +46,24 @@
             <maxTotalSize>4096</maxTotalSize>
         </xattrFilter>
     </folder>
-    <folder id="q2atp-kjzrz" label="Neorg" path="/home/jjavillo/neorg" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
-        <filesystemType>basic</filesystemType>
-        <device id="2GDZGAA-WNZOOVS-RPDCHDV-VWTGPVH-5QWHSLP-CQ662AD-KVUIAQO-Q4JGPAF" introducedBy="">
-            <encryptionPassword></encryptionPassword>
-        </device>
-        <device id="23W7FP7-UA6WRCX-4PDF3PT-WZCRNFT-XDWQXB3-G2R4EKB-T35OWMX-DS7IFQ7" introducedBy="">
-            <encryptionPassword></encryptionPassword>
-        </device>
-        <minDiskFree unit="%">1</minDiskFree>
-        <versioning type="simple">
-            <param key="cleanoutDays" val="NaN"></param>
-            <param key="keep" val="5"></param>
-            <cleanupIntervalS>3600</cleanupIntervalS>
-            <fsPath></fsPath>
-            <fsType>basic</fsType>
-        </versioning>
-        <copiers>0</copiers>
-        <pullerMaxPendingKiB>0</pullerMaxPendingKiB>
-        <hashers>0</hashers>
-        <order>random</order>
-        <ignoreDelete>false</ignoreDelete>
-        <scanProgressIntervalS>0</scanProgressIntervalS>
-        <pullerPauseS>0</pullerPauseS>
-        <maxConflicts>10</maxConflicts>
-        <disableSparseFiles>false</disableSparseFiles>
-        <disableTempIndexes>false</disableTempIndexes>
+    <device id="ACWL5NA-II2UJNZ-QMS4GQ2-HFVTJ5M-BF7SPLM-6WWZCBC-GA3H6U6-SJ3YHAB" name="Julians-iPad" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
+        <address>dynamic</address>
         <paused>false</paused>
-        <weakHashThresholdPct>25</weakHashThresholdPct>
-        <markerName>.stfolder</markerName>
-        <copyOwnershipFromParent>false</copyOwnershipFromParent>
-        <modTimeWindowS>0</modTimeWindowS>
-        <maxConcurrentWrites>2</maxConcurrentWrites>
-        <disableFsync>false</disableFsync>
-        <blockPullOrder>standard</blockPullOrder>
-        <copyRangeMethod>standard</copyRangeMethod>
-        <caseSensitiveFS>false</caseSensitiveFS>
-        <junctionsAsDirs>true</junctionsAsDirs>
-        <syncOwnership>false</syncOwnership>
-        <sendOwnership>false</sendOwnership>
-        <syncXattrs>false</syncXattrs>
-        <sendXattrs>false</sendXattrs>
-        <xattrFilter>
-            <maxSingleEntrySize>0</maxSingleEntrySize>
-            <maxTotalSize>0</maxTotalSize>
-        </xattrFilter>
-    </folder>
+        <autoAcceptFolders>false</autoAcceptFolders>
+        <maxSendKbps>0</maxSendKbps>
+        <maxRecvKbps>0</maxRecvKbps>
+        <maxRequestKiB>0</maxRequestKiB>
+        <untrusted>false</untrusted>
+        <remoteGUIPort>0</remoteGUIPort>
+        <numConnections>0</numConnections>
+    </device>
     <device id="2GDZGAA-WNZOOVS-RPDCHDV-VWTGPVH-5QWHSLP-CQ662AD-KVUIAQO-Q4JGPAF" name="Phone" compression="metadata" introducer="false" skipIntroductionRemovals="false" introducedBy="">
         <address>dynamic</address>
         <paused>false</paused>
         <autoAcceptFolders>false</autoAcceptFolders>
         <maxSendKbps>0</maxSendKbps>
         <maxRecvKbps>0</maxRecvKbps>
+        <ignoredFolder time="2024-09-12T15:55:49.537Z" id="q2atp-kjzrz" label="Neorg"></ignoredFolder>
         <maxRequestKiB>0</maxRequestKiB>
         <untrusted>false</untrusted>
         <remoteGUIPort>0</remoteGUIPort>
@@ -211,7 +142,7 @@
         <connectionPriorityUpgradeThreshold>0</connectionPriorityUpgradeThreshold>
     </options>
     <defaults>
-        <folder id="" label="" path="~" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" ignorePerms="false" autoNormalize="true">
+        <folder id="" label="" path="~" type="sendreceive" rescanIntervalS="3600" fsWatcherEnabled="true" fsWatcherDelayS="10" fsWatcherTimeoutS="0" ignorePerms="false" autoNormalize="true">
             <filesystemType>basic</filesystemType>
             <device id="23W7FP7-UA6WRCX-4PDF3PT-WZCRNFT-XDWQXB3-G2R4EKB-T35OWMX-DS7IFQ7" introducedBy="">
                 <encryptionPassword></encryptionPassword>
