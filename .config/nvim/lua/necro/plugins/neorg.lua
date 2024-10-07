@@ -1,8 +1,9 @@
 return {
     {
         "nvim-neorg/neorg",
-        lazy = false,
-        enabled = false,
+        lazy = true,
+        ft = "norg",
+        enabled = true,
         dependencies = {{ "nvim-lua/plenary.nvim" }, { "nvim-neorg/neorg-telescope" }, {'3rd/image.nvim'}, "luarocks.nvim"},
         config = function()
             require("neorg").setup {

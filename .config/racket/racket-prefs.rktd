@@ -1,9 +1,19 @@
 (
  (plt:framework-pref:drracket:language-settings ((-32768) (#6(#t print mixed-fraction-e #f #t debug) (default) #0() #f #t #t ((test) (main)) #t)))
- (|plt:framework-pref:MacroStepper:Frame:Width| 700)
- (|plt:framework-pref:MacroStepper:Frame:Height| 600)
+ (|plt:framework-pref:MacroStepper:Frame:Width| 1242)
+ (|plt:framework-pref:MacroStepper:Frame:Height| 891)
  (readline-input-history
   (
+   #"(abs -10)q"
+   #"(abs -10)"
+   #"(abs #t)"
+   #"(case (zero? 0) [(7 #t 2) 5] [(#t) 6] [else 1])"
+   #"(value->bits 5)"
+   #"(case (add1 3) [else 2])"
+   #"(case 4 [(4) 1] [else 2])"
+   #"(case 4 [(4 5 6) 1] [else 2])"
+   #"(case 4 [(4 5 6) 1] [(#t #f) 7] [else 2])"
+   #"(cond [(not #t) 3] [7 4] [else 5])"
    #"(- (sub1 (expt 2 32)) 15)"
    #"(check-equal? (sub1 (expt 2 32)) (4294967295))"
    #"(expt 2 32)"
@@ -120,19 +130,41 @@
    #"https://www.cs.umd.edu/class/fall2024/cmsc430/Schedule.htm"
    #"https://www.cs.umd.edu/class/fall2024/cmsc430/Schedule.html"
   ))
- (|plt:DrRacket 8.6-splash-max-width| 1016)
- (plt:framework-pref:drracket:window-position #hash((#f . (0 627 99)) (((0 0 1920 1080)) . (0 627 99))))
  (plt:framework-pref:framework:exit-when-no-frames #t)
- (plt:framework-pref:framework:standard-style-list:font-size #2(#hash((((1920 1080)) . 12) (((1280 720)) . 12)) 12))
+ (plt:framework-pref:framework:standard-style-list:font-size #2(#hash((((1920 1080)) . 12) (((1280 720)) . 12) (((1920 1080) (640 360)) . 12) (((1920 1080) (1280 720)) . 12)) 12))
  (plt:framework-pref:framework:color-scheme classic)
- (plt:framework-pref:framework:recently-opened-files/pos ((#"/home/jjavillo/classes/cmsc430/a86-basics/03-stacks.rkt" 0 0) (#"/home/jjavillo/classes/cmsc430/a86-basics/01-registers.rkt" 0 0) (#"/home/jjavillo/classes/cmsc430/racket-basics/07-exprs.rkt" 0 0) (#"/home/jjavillo/classes/cmsc430/racket-basics/06-btnumbers.rkt" 0 0)))
+ (|plt:DrRacket 8.6-splash-max-width| 1017)
+ (plt:framework-pref:framework:recently-opened-files/pos
+  (
+   (#"/home/jjavillo/classes/cmsc430/dupe-plus/test/all.rkt" 0 0)
+   (#"/home/jjavillo/classes/cmsc430/dupe-plus/compile.rkt" 0 0)
+   (#"/home/jjavillo/classes/cmsc430/dupe-plus/interp.rkt" 0 0)
+   (#"/home/jjavillo/classes/cmsc430/dupe-plus/parse.rkt" 0 0)
+   (#"/home/jjavillo/classes/cmsc430/dupe-plus/compile-ops.rkt" 0 0)
+   (#"/home/jjavillo/classes/cmsc430/a86-basics/03-stacks.rkt" 0 0)
+   (#"/home/jjavillo/classes/cmsc430/a86-basics/01-registers.rkt" 0 0)
+   (#"/home/jjavillo/classes/cmsc430/racket-basics/07-exprs.rkt" 0 0)
+   (#"/home/jjavillo/classes/cmsc430/racket-basics/06-btnumbers.rkt" 0 0)
+  ))
  (plt:framework-pref:drracket:recent-language-names (("Determine language from source" #6(#t print mixed-fraction-e #f #t debug) (default) #0() #f #t #t ((test) (main)) #t)))
- (plt:framework-pref:plt:debug-tool:stack/variable-area 9/10)
+ (plt:framework-pref:plt:debug-tool:stack/variable-area 15331/19090)
  (plt:framework-pref:drracket:most-recent-lang-line "#lang racket\n")
- (plt:framework-pref:drracket:window-size #hash((((0 0 1280 720)) . (#t 600 650)) (#f . (#t 600 650)) (((0 0 1920 1080)) . (#t 600 650))))
  (plt:framework-pref:drracket:unit-window-size-percentage 1/2)
+ (plt:framework-pref:drracket:window-position #hash((#f . (0 675 24)) (((0 0 1920 1080) (-1920 -179 640 360)) . (0 309 306)) (((0 0 1920 1080) (-1920 -359 1280 720)) . (0 675 24)) (((0 0 1920 1080)) . (0 627 99))))
+ (plt:framework-pref:drracket:window-size #hash((((0 0 1280 720)) . (#t 600 650)) (#f . (#t 600 650)) (((0 0 1920 1080) (-1920 -179 640 360)) . (#f 600 650)) (((0 0 1920 1080) (-1920 -359 1280 720)) . (#t 600 650)) (((0 0 1920 1080)) . (#t 600 650))))
  (plt:framework-pref:framework:verify-exit #t)
- (plt:framework-pref:drracket:recently-closed-tabs ((#"/home/jjavillo/classes/cmsc430/a86-basics/03-stacks.rkt" 3808 3808) (#"/home/jjavillo/classes/cmsc430/a86-basics/01-registers.rkt" 575 575) (#"/home/jjavillo/classes/cmsc430/racket-basics/07-exprs.rkt" 4276 4328) (#"/home/jjavillo/classes/cmsc430/racket-basics/06-btnumbers.rkt" 1197 1197)))
+ (plt:framework-pref:drracket:recently-closed-tabs
+  (
+   (#"/home/jjavillo/classes/cmsc430/dupe-plus/test/all.rkt" 0 0)
+   (#"/home/jjavillo/classes/cmsc430/dupe-plus/compile.rkt" 1225 1238)
+   (#"/home/jjavillo/classes/cmsc430/dupe-plus/interp.rkt" 0 0)
+   (#"/home/jjavillo/classes/cmsc430/dupe-plus/parse.rkt" 0 0)
+   (#"/home/jjavillo/classes/cmsc430/dupe-plus/compile-ops.rkt" 1 1)
+   (#"/home/jjavillo/classes/cmsc430/a86-basics/03-stacks.rkt" 3808 3808)
+   (#"/home/jjavillo/classes/cmsc430/a86-basics/01-registers.rkt" 575 575)
+   (#"/home/jjavillo/classes/cmsc430/racket-basics/07-exprs.rkt" 4276 4328)
+   (#"/home/jjavillo/classes/cmsc430/racket-basics/06-btnumbers.rkt" 1197 1197)
+  ))
  (plt:framework-pref:drracket:console-previous-exprs
   (
    ("(sexpr->expr 'x)")
@@ -146,5 +178,43 @@
    ("t3")
    ("(display pop-sum-rax)")
    ("exit")
+   ("(parse (cond [else 5]))")
+   ("(parse (cond [(not #t) 3] [else 5]))")
+   ("parse (1) ")
+   ("(parse (1))")
+   ("(parse 1)")
+   ("(parse (if x y z))")
+   ("(parse (if 1 2 3))")
+   ("(parse '(if 1 2 3))")
+   ("(parse '(1))")
+   ("(value->bits 1)")
+   ("(value->bits #t)")
+   ("(value->bits #f)")
+   ("(seq (value->bits #t))")
+   ("(value->bits 7)")
+   ("(value->bits 14)")
+   ("(value->bits 8)")
+   ("(Not 7)")
+   ("(mov rax 7)")
+   ("(Mov rax 7)")
+   ("rax")
+   ("(rax)")
+   ("(Get rax)")
+   ("(Not rax)")
+   ("(value->bits #t)")
+   ("(value->bits #f)")
+   ("(value->bits 1)")
+   ("(value->bits 0)")
+   ("(value->bits -1)")
+   ("(value->bits #t)")
+   ("(value->bits 2)")
+   ("(display (asm-interp (compile (parse (case 5 [(1 2 3 #t) 5] [(7 #t 5 2) #f] [(#t 5) 6] [else 1])))))")
+   ("(display (asm-display\n            (compile (parse (case 5 [(1 2 3 #t) 5] [(7 #t 5 2) #f] [(#t 5) 6] [else 1])))))")
+   ("(display (asm-display\n            (compile (parse (case 5 [(1 2 3 #t) 5] [(7 #t 5 2) #f] [(#t 5) 6] [else 1]))))\n           )")
+   ("(parse (case 5 [(1 2 3 #t) 5] [(7 #t 5 2) #f] [(#t 5) 6] [else 1]))")
+   ("(display (asm-display\n            (compile (parse '\n                            (case 5 [(1 2 3 #t) 5] [(7 #t 5 2) #f] [(#t 5) 6] [else 1])))))")
+   ("(asm-display (compile (parse '(cond [(zero? 1) 1] [(zero? 2) 2] [(zero? 0) 3] [(zero? 4) 4] [(zero? 5) 5] [else 6]))))")
+   ("(require a86/printer)")
+   ("(asm-display (compile (parse '(case (case (zero? 0) [(7 #t 2) 5] [(5) 6] [else 1]) [(1 2 3 #t) (case #f [(7 2 #t) 3] [else 5])] [(7 #t 5 2) (case 2 [(7 2 #t) #f] [else 1])] [(#t 5) 6] [else 1]))))")
   ))
 )

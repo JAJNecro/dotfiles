@@ -490,3 +490,39 @@
 18:17:15.942027 version@stat F·[0 1] S·762KiB[0B 762KiB] Sc·[0.00 0.01]
 18:17:15.946076 table@compaction committed F-1 S-34KiB Ke·0 D·1024 T·25.046489ms
 18:17:15.946356 table@remove removed @115
+=============== Sep 20, 2024 (EDT) ===============
+12:49:17.090185 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+12:49:17.090971 version@stat F·[0 1] S·762KiB[0B 762KiB] Sc·[0.00 0.01]
+12:49:17.091002 db@open opening
+12:49:17.091039 journal@recovery F·1
+12:49:17.091412 journal@recovery recovering @117
+12:49:17.103978 journal@drop journal-117 S·57B "zero header"
+12:49:17.111722 memdb@flush created L0@120 N·19469 S·600KiB "\x00\x00\x00..git,d48162":"\x10\x00\x00..zrz,v57015"
+12:49:17.112126 version@stat F·[1 1] S·1MiB[600KiB 762KiB] Sc·[0.25 0.01]
+12:49:17.122815 db@janitor F·5 G·1
+12:49:17.122827 db@janitor removing table-116
+12:49:17.122902 db@open done T·31.89426ms
+12:49:18.701480 table@compaction L0·1 -> L1·1 S·1MiB Q·67526
+12:49:18.711670 table@build created L1@123 N·2611 S·204KiB "\x00\x00\x00..ian,v47989":"\x0e\x00\x00...md,v45767"
+12:49:18.711718 version@stat F·[0 1] S·204KiB[0B 204KiB] Sc·[0.00 0.00]
+12:49:18.717365 table@compaction committed F-1 S-1MiB Ke·0 D·26623 T·15.843073ms
+12:49:18.717660 table@remove removed @119
+=============== Sep 24, 2024 (EDT) ===============
+13:19:56.560059 db@close closing
+13:19:56.561508 db@close done T·1.709371ms
+=============== Sep 26, 2024 (EDT) ===============
+15:45:50.820795 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:45:50.821606 version@stat F·[0 1] S·204KiB[0B 204KiB] Sc·[0.00 0.00]
+15:45:50.821638 db@open opening
+15:45:50.821673 journal@recovery F·1
+15:45:50.828435 journal@recovery recovering @121
+15:45:50.837801 memdb@flush created L0@124 N·4889 S·148KiB "\x00\x00\x00..son,v71240":"\x0e\x00\x00..png,v68448"
+15:45:50.838210 version@stat F·[1 1] S·353KiB[148KiB 204KiB] Sc·[0.25 0.00]
+15:45:50.851116 db@janitor F·5 G·1
+15:45:50.851138 db@janitor removing table-120
+15:45:50.851204 db@open done T·29.559844ms
+15:45:52.398537 table@compaction L0·1 -> L1·1 S·353KiB Q·72416
+15:45:52.408056 table@build created L1@127 N·2986 S·238KiB "\x00\x00\x00..ian,v47989":"\x0e\x00\x00..png,v68448"
+15:45:52.408134 version@stat F·[0 1] S·238KiB[0B 238KiB] Sc·[0.00 0.00]
+15:45:52.414562 table@compaction committed F-1 S-114KiB Ke·0 D·4514 T·15.961488ms
+15:45:52.414696 table@remove removed @123

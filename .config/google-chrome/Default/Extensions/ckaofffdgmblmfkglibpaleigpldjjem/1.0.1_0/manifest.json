@@ -1,0 +1,25 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "icon128.png",
+         "16": "icon16.png",
+         "48": "icon48.png"
+      }
+   },
+   "description": "",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw0smJgq+lrRNuJxYg8dY3iPETvJvJzgnBnD+VoRtDY4IqBlEP9ktkPOA3dAWWUhDnS6NtihzT9uVgqDX1v9LB3LphSlrQwVA0VoMGs2c+uItB+oON2D3J+hjU9qA7IyfsS69cSSVmOi6TbEbVIvIn+oDxdfh/imRHHzAbf7y1Vc2ASRVJu3I3ccpngZ1b+EtKbiRnn4ioNVOS0xXMl0Au6cvp/xpNpdnxvKN5PQMmQYcW0v4SyKaPhutDsmGWL80Jg468j4iqmCAJCP+nbePQbiSTz6ld6wSWAewgRPdAuFuwPh226+iQEBEciKXLJdtiunOLbRPykmY0YvZYFHtcwIDAQAB",
+   "manifest_version": 2,
+   "name": "Reload CSS",
+   "permissions": [ "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.1"
+}
